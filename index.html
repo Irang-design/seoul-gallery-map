@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>SEOUL GALLERY MAP</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>SEOUL GALLERY MAP</h1>
+  </header>
+
+  <main>
+    <!-- 왼쪽 갤러리 목록 영역 -->
+    <section id="gallery-list" aria-labelledby="gallery-list-title">
+      <h2 id="gallery-list-title">갤러리 목록</h2>
+      <div class="gallery-search">
+        <label for="gallery-search">갤러리 이름 검색</label>
+        <input id="gallery-search" type="search" placeholder="갤러리 이름을 입력하세요" autocomplete="off" aria-controls="gallery-items">
+      </div>
+      <p>갤러리 이름을 클릭하면 지도에서 위치를 확인할 수 있습니다.</p>
+      <p id="search-status" role="status" hidden>검색 결과가 없습니다.</p>
+      <ul id="gallery-items"></ul>
+    </section>
+
+    <!-- 오른쪽 서울 지도 영역 -->
+    <section id="map-section" aria-labelledby="map-title">
+      <h2 id="map-title">서울 지도</h2>
+      <div id="map" aria-label="서울시청을 중심으로 한 서울 지도"></div>
+    </section>
+  </main>
+</body>
+</html>

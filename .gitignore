@@ -1,0 +1,70 @@
+# 운영체제 임시 파일
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 편집기 개인 설정과 로컬 개발 도구 설정
+.vscode/
+.idea/
+*.code-workspace
+.history/
+.codex/
+.agents/
+
+# 환경 변수 및 컴퓨터별 설정 (공개용 예제는 허용)
+.env
+.env.*
+!.env.example
+!.env.sample
+*.local
+*.local.*
+.python-version
+.venv/
+venv/
+
+# 인증 정보 및 개인키
+.aws/
+.ssh/
+.netrc
+_netrc
+.npmrc
+.pypirc
+credentials.json
+credentials.*.json
+secrets.json
+secrets.*.json
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# 로그, 캐시, 백업, 임시 검증 파일
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+tmp/
+temp/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+coverage/
+.mobile-qa.png
+.responsive-qa.cjs
+.links-baseline.json
+.link-audit.json
+.popup-baseline.json
+
+# 로컬 의존성 및 브라우저 테스트 산출물
+node_modules/
+playwright-report/
+test-results/
